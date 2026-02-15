@@ -43,6 +43,7 @@
 		FAD43ED01FF3136500831BB8 /* freetype.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FAD43ECF1FF3133700831BB8 /* freetype.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FAD4B1731C1F50A3004CF150 /* theora.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = FA27B3CA1B498696008A9DCE /* theora.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		FAE64A9D2072738600BC7981 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE64A9C2072738600BC7981 /* Metal.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		AAAA00011A000001000GAME1 /* game.love in Resources */ = {isa = PBXBuildFile; fileRef = AAAA00001A000001000GAME1 /* game.love */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		FAD43ECF1FF3133700831BB8 /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = macosx/Frameworks/freetype.framework; sourceTree = "<group>"; };
 		FAE64A9C2072738600BC7981 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.2.sdk/System/Library/Frameworks/Metal.framework; sourceTree = DEVELOPER_DIR; };
 		FAF5F96C233965DF0030A68A /* love.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = love.entitlements; sourceTree = "<group>"; };
+		AAAA00001A000001000GAME1 /* game.love */ = {isa = PBXFileReference; lastKnownFileType = file; path = game.love; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +219,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AAAA00001A000001000GAME1 /* game.love */,
 				FAC1A448196F5DC600125284 /* license.txt */,
 			);
 			name = Resources;
@@ -397,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAA00011A000001000GAME1 /* game.love in Resources */,
 				FA5D249C1A96CF4300C6FC8F /* Images.xcassets in Resources */,
 				FA7C636A1A9C49570000FD29 /* Launch Screen.xib in Resources */,
 			);
@@ -562,7 +566,7 @@
 					"\"$(SRCROOT)/../../src/modules\"",
 				);
 				INFOPLIST_FILE = "love-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
@@ -637,7 +641,7 @@
 					"\"$(SRCROOT)/../../src/modules\"",
 				);
 				INFOPLIST_FILE = "love-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -697,10 +701,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.5;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = org.love2d.love;
-				PRODUCT_NAME = love;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flappysurvivor.game;
+				PRODUCT_NAME = "Flappy Survivor";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -747,10 +751,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.5;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.love2d.love;
-				PRODUCT_NAME = love;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flappysurvivor.game;
+				PRODUCT_NAME = "Flappy Survivor";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -798,10 +802,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 11.5;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = org.love2d.love;
-				PRODUCT_NAME = love;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flappysurvivor.game;
+				PRODUCT_NAME = "Flappy Survivor";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -871,7 +875,7 @@
 					"\"$(SRCROOT)/../../src/modules\"",
 				);
 				INFOPLIST_FILE = "love-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;

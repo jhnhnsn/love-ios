@@ -21,7 +21,7 @@
 /platform/xcode/Build
 /platform/xcode/DerivedData
 /platform/xcode/ios/include
-/platform/xcode/ios/libraries
+# /platform/xcode/ios/libraries  # Committed for Flappy Survivor fork
 /platform/xcode/ios/luajit-git
 /platform/xcode/macosx/Frameworks
 *xcuserdata*
